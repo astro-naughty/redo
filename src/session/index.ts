@@ -2,12 +2,10 @@ import readline from "readline";
 
 type AsyncQuestion = (question: string) => Promise<string>;
 
+/** Utiulity that makes console questions easier. */
 const createSession = async (
   session: (question: AsyncQuestion) => Promise<void>,
-  options?: {
-    // todo: add more string parsing options if needed
-    trim?: boolean;
-  }
+  options?: { trim?: boolean }
 ) => {
   const rl = readline.createInterface({
     input: process.stdin,
