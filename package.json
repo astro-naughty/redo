@@ -1,0 +1,19 @@
+{
+  "name": "pull-request-automation",
+  "version": "1.0.0",
+  "scripts": {
+    "run:dev": "ts-node ./src/index.ts",
+    "run:dev:watch": "nodemon ./src/index.ts"
+  },
+  "author": "Marcin Rogalski",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "prompt-sync": "^4.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.16",
+    "@types/prompt-sync": "^4.2.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.9.4"
+  }
+}
